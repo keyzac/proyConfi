@@ -1,0 +1,16 @@
+from .base import *
+ALLOWED_HOSTS = ['138.197.122.110','cegad.cerezaconsulting.com']
+DEBUG = False
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'conegpstagingdb',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
+STATIC_URL = '/static/'
+APPSECRET_PROOF = False
