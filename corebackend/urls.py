@@ -24,11 +24,5 @@ urlpatterns = [
                   url(r'^jet/', include('jet.urls', 'jet')),
                   url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
                   url(r'^admin/', admin.site.urls),
-                  url(r'^api/', include('apps.account.urls', namespace='account', app_name='account')),
-                  url(r'^api/', include('apps.events.urls')),
-                  url(r'^api/', include('apps.posts.urls')),
                   url(r'^docs/', include('rest_framework_docs.urls')),
-                  url(r'^media/(?P<path>.*)$', serve, {
-                      'document_root': base.MEDIA_ROOT,
-                  }),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
