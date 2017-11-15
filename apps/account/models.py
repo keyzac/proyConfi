@@ -46,17 +46,4 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name = "Usuario"
         verbose_name_plural = "Usuarios"
 
-
-class Songbook(models.Model):
-    name = models.CharField(max_length=200, blank=True, null=True)
-    text = models.TextField(blank=True, null=True)
-
-    class Meta:
-        ordering = ('name',)
-        verbose_name = "Cancionero"
-        verbose_name_plural = "Cancioneros"
-
-    def __str__(self):
-        return self.name
-
 # Create your models here.

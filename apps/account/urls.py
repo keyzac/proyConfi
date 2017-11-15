@@ -23,6 +23,4 @@ urlpatterns = [
     url(r'^filter/users/$', FilterUsersAPIView.as_view()),
     url(r'^user/update/$', UpdateUserAPIView.as_view()),
     url(r'^user/(?P<pk>\d+)/photo/$', UpdateUserPhotoAPIView.as_view()),
-    url(r'^songbooks/$', ListSongBook.as_view()),
-
 ]

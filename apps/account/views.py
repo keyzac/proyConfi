@@ -130,11 +130,3 @@ class FilterUsersAPIView(generics.ListAPIView):
     serializer_class = UserFilterSerializer
     filter_backends = (filters.SearchFilter,)
     search_fields = ('first_name', 'last_name')
-
-
-class ListSongBook(generics.ListAPIView):
-    queryset = Songbook.objects.all()
-    pagination_class = PageNumberPagination
-    serializer_class = SongbookSerializer
-    filter_backends = (filters.SearchFilter,)
-    search_fields = ('name',)

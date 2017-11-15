@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate, login
 from requests.exceptions import HTTPError
 from rest_framework.authtoken.models import Token
-from .models import User, Songbook
+from .models import User
 from django.contrib.auth.tokens import default_token_generator
 from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail.message import EmailMessage
@@ -156,9 +156,3 @@ class UserListSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'first_name', 'last_name',)
-
-
-class SongbookSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Songbook
-        fields = ('id', 'name', 'text')
