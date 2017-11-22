@@ -1,5 +1,5 @@
 from .base import *
-ALLOWED_HOSTS = ['138.197.122.110','cegad.cerezaconsulting.com']
+ALLOWED_HOSTS = ['104.236.217.40',]
 DEBUG = False
 DATABASES = {
     'default': {
