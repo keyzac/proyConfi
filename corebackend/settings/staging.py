@@ -8,9 +8,9 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
 APPSECRET_PROOF = False

@@ -4,7 +4,7 @@ from .views import *
 from django.contrib.auth import views
 
 urlpatterns = [
-    #url(r'^register/$', CreateUserAPIView.as_view()),
+    url(r'^register/$', CreateUserAPIView.as_view()),
     url(r'^user/retrieve/$', RetrieveUserAPIView.as_view()),
     url(r'^login/$', LoginAPIView.as_view()),
     url(r'^login/mobile/(?P<backend>[^/]+)/$', FacebookMobileLoginAPI.as_view(), name="facebook-mobile-login"),
