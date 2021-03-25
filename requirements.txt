@@ -39,7 +39,7 @@ pyparsing==2.2.0
 python-social-auth==0.2.21
 python3-openid==3.0.10
 pytz==2016.6.1
-PyYAML==3.12
+PyYAML==5.4
 qrcode==5.3
 requests==2.11.0
 requests-oauthlib==0.6.2
